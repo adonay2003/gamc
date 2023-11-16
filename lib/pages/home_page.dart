@@ -4,6 +4,8 @@ import 'package:tabbar_tabbarview/pages/page2.dart';
 import 'package:tabbar_tabbarview/pages/page3.dart';
 import 'package:tabbar_tabbarview/pages/page4.dart';
 import 'package:tabbar_tabbarview/pages/page5.dart';
+import 'package:tabbar_tabbarview/pages/page6.dart';
+
 
 //este HomePage declaramos en la Rutab del main.dart
 class HomePage extends StatefulWidget {
@@ -27,7 +29,7 @@ with SingleTickerProviderStateMixin{
 
   // Creamos una instancia de TabController para controlar el TabBar y el TabBarView.
   // Le especificamos la longitud (cantidad de pestañas) y el 'vsync' que se asocia con 'this'.
-  controller = TabController(length: 5, vsync: this); 
+  controller = TabController(length: 6, vsync: this); 
   // Nota: La longitud debe coincidir con la cantidad de elementos en el TabBarView.
 
   // Agregamos un listener (escucha) al controlador que se activará cada vez que el usuario cambie de pestaña.
@@ -76,7 +78,7 @@ void dispose() {
             ],
           ),
           //Aqui agregamos un TabBar donde seran las pestañas
-          bottom:  TabBar(
+          bottom:   TabBar(
 
             ////////////////////////////////////////////////
             //  QUITA EL LIMTE DE LOS TabBar
@@ -102,6 +104,8 @@ void dispose() {
 
             //cuando no este selcciomnado el texto se mueste menor el tamaño
             unselectedLabelStyle: TextStyle(fontSize: 15),
+
+
             tabs: [
 
               //envolvemos en un row para agregarle efecto o estilo de un circulo con numero
@@ -120,8 +124,12 @@ void dispose() {
              
               Text("Estados"), //pestaña2
               Text("Llamadas"), //pestaña3
-              Text("Pruba"), //pestaña de prueba
-              Text("prueba"), //pestaña de prueba 2
+              Text("pestaña 4"), //pestaña de prueba
+              Text("pestaña 5"), //pestaña de prueba 
+
+              Text("pestaña 6"), //pestaña de prueba 
+
+              
           ]),
         ),
 
@@ -140,6 +148,8 @@ void dispose() {
             pagina3(),
             pagina4(),
             pagina5(),
+            pagina6(),
+            
         ]),
       );
 }

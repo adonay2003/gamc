@@ -12,10 +12,10 @@ class pagina1 extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.all(16.0),
           children: <Widget>[
-            ChatWidget("img/ge.jpg", "Yo", "pedidos"),  // Crear un ChatWidget con una imagen, un nombre y un mensaje
-            ChatWidget("img/emilio.jpeg", "Emilio", "¡Hola! Estoy bien, ¿y tú?"),
+            ChatWidget("img/ge.jpg", "Yo", "Pagar internet xd"),  // Crear un ChatWidget con una imagen, un nombre y un mensaje
+            ChatWidget("img/emilio.jpeg", "Emilio", "hijo, va que hay tareas ..."),
             ChatWidget("img/aa.jpg", "Levi", "Muy bien, gracias."),
-            ChatWidget("img/jeff.jpg", "Jeff", "Estuve trabajando en un proyecto. ¿Tienes alguna novedad?"),
+            ChatWidget("img/jeff.jpg", "Jeff", "Men pasate la copia :v"),
           ],
         ),
       ),
